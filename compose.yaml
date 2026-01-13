@@ -1,0 +1,11 @@
+services:
+  qr-vote:
+    build: .
+    container_name: qr-vote
+    ports:
+      - "3000:3000"
+    environment:
+      # IMPORTANT: set to your actual reachable URL for correct QR
+      PUBLIC_URL: "http://nahwu.synology.me:3000/"
+      ADMIN_TOKEN: "123123123"
+    restart: unless-stopped
