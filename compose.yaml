@@ -7,5 +7,7 @@ services:
     environment:
       # IMPORTANT: set to your actual reachable URL for correct QR
       PUBLIC_URL: "http://nahwu.synology.me:3000/"
+      # For router HTTPS reverse proxy setup on port 3001
+      #PUBLIC_URL: "https://nahwu.synology.me:3001/"
       ADMIN_TOKEN: "123123123"
     restart: unless-stopped
